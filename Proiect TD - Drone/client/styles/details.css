@@ -1,0 +1,31 @@
+.container {
+    display:flex;
+    background-color: #642174;
+    padding:1px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:50%;
+    margin: auto;
+}
+
+.label {
+    font-weight: bold;
+    padding: 30px;
+    font-size: 30px;
+    flex: 55px;
+    background-color: rgba(161, 153, 112, 0.85);
+}
+.Home
+{
+    font-size: 40px;
+    font-style: italic;
+    color: #61c608;
+}
+.value {
+    padding: 25px;
+    text-align: center;
+    background-color: #c68164;
+    flex: auto;
+    color: #041466;
+    font-size: 35px;
+}

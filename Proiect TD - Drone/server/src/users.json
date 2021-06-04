@@ -1,0 +1,6 @@
+[
+  { "name": "Cristina", "city": "Sebes" , "description" : "Details"},
+  { "name": "Andrei", "city": "Satu Mare", "description" : "Details" },
+  { "name": "Sebastian", "city": "Bistrita-Nasaud", "description" : "Details" },
+  { "name": "Maria", "city": "Cluj-Napoca", "description" : "Details" }
+]

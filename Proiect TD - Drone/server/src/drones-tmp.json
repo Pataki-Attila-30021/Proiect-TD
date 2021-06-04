@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Drona Visuo XS816",
+        "acumulator":"3.85V 1800 mAh li-ion",
+        "color":"gri",
+        "greutate":"168g",
+        "descriere":"Timp de zbor lung: aproximativ 16-20 minute,Zbor HD FPV: echipat cu 4K HD",
+        "year":2019,
+        "price":"1000 RON"
+    },
+    {
+        "id":2,
+        "name":"Drona Yuneec Typhoon Q500",
+        "acumulator":"Li-Polimer 5400 mAh",
+        "color":"rosu",
+        "greutate":"335g",
+        "descriere":"test",
+        "year":2020,
+        "price":"6000 RON"
+    },
+    {
+        "id":3,
+        "name":"Drona SLX F11 PRO",
+        "acumulator":"7.4V 2500 mAh",
+        "color":"verde",
+        "greutate":"585g",
+        "descriere":"test",
+        "year":2017,
+        "price":"1500 RON"
+    }
+]

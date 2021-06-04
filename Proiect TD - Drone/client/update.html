@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript" src="libs/vue.js"></script>
+        <script type="text/javascript" src="libs/axios.js"></script>
+    </head>
+    <body>
+    <a href="index.html" style="font-size: 40px;font-style: italic;color: #4b652b;">Home</a>
+        <div id="update" style="font-size: 25px">
+            Update drone with id-ul: {{ id }} <br>
+            Name: <input type="text" style="font-size: 20px;background-color: #b0bf2b;color: rgba(0,0,0,0.95)" v-model="drone.name">
+            <br>
+            Battery: <input type="text" style="font-size: 20;background-color: #b0bf2b;color: rgba(0,0,0,0.95)" v-model="drone.battery">
+            <br>
+            Color:<input type="text" style="font-size: 20;background-color: #b0bf2b;color: rgba(5,3,3,0.95)" v-model="drone.color">
+            <br>
+            Description: <input type="text" style="font-size: 20px;background-color: #b0bf2b;color: rgba(0,0,0,0.95)" v-model="drone.description">
+            <br>
+            Price: <input type="text" style="font-size: 20px;background-color: #b0bf2b;color: rgba(0,0,0,0.95)" v-model="drone.price">
+            <br>
+            Weight: <input type="text" style="font-size: 20px;background-color: #b0bf2b;color: rgba(0,0,0,0.95)" v-model="drone.weight">
+            <br>
+            Year: <input type="text" style="font-size: 20px;background-color: #b0bf2b;color: rgba(0,0,0,0.95)" v-model="drone.year">
+            <br>
+            <button  v-on:click="update(drone.id)">Save</button>
+
+            <p>{{message}}</p>
+
+        </div>
+
+        <script src="src/update.js"></script>
+    </body>
+</html>

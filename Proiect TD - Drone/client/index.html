@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <title>Drones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/vue-material.css" />
+  <script type="text/javascript" src="libs/vue.js"></script>
+  <script type="text/javascript" src="libs/vue-material.js"></script>
+  <script type="text/javascript" src="libs/axios.js"></script>
+  <script type="text/javascript" src="src/users-service.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <div style="text-align: center" class="title">Drones</div>
+
+    <p style="text-align: center" v-if="drones.length == 0">No drones found</p>
+
+    <ul class="user-list" v-if="drones.length > 0">
+      <li>
+        <div class="user-row-header"><br/>
+          <div class="user-name">Name</div>
+          <br/><br/>
+          <div class="user-city">Price</div>
+          <br/><br/>
+          <div class="user-city2">Details</div>
+          <br/>
+        </div>
+      </li>
+
+      <li v-for="drone in drones">
+        <div class=""><br><br><br>
+          <a :href="'details.html?id='+drone.id"> {{ drone.id }}.   {{ drone.name }}</a><br>
+          <br> <br><span class=""><i>{{ drone.price }}</i></span><br><br>
+          <br>  {{ drone.description }}<br>
+          <br> <a :href="'update.html?id='+drone.id" target="_self">Update</a><br><br><br>
+      </li>
+    </ul>
+  </div>
+  <script src="src/app.js"></script>
+</body>
+
+</html>
